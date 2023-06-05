@@ -7,7 +7,7 @@ var cityInfo
 var jobs
 
 app.use(express.static('public'))
-///////////
+//////////
 let getJobs = async() => {
     jobs = await util.getJobs;
 }
@@ -15,7 +15,7 @@ let getJobs = async() => {
 let getCityInfo = async() => {
     cityInfo = await util.getCityInfo;
 }
-////////
+///////
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'))
 })
